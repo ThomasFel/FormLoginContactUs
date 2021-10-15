@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="img/logo.png">
-    <title>Login</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
@@ -28,36 +28,18 @@
 
                 <div class="col-lg-6">
                     <div class="card2 card border-0 px-4 py-5">
-                        <div class="row mb-4 px-3">
-                            <h6 class="mb-0 mr-4 mt-2">Sign in with</h6>
-                            
-                            <div class="facebook text-center mr-3">
-                                <div class="fa fa-facebook social-network"></div>
-                            </div>
-
-                            <div class="twitter text-center mr-3">
-                                <div class="fa fa-twitter social-network"></div>
-                            </div>
-
-                            <div class="linkedin text-center mr-3">
-                                <div class="fa fa-linkedin social-network"></div>
-                            </div>
-
-                            <div class="google text-center mr-3">
-                                <div class="fa fa-google social-network"></div>
-                            </div>
-                        </div>
-
-                        <div class="row px-3 mb-4">
-                            <div class="line"></div>
-                            <small class="or text-center">Or</small>
-                            <div class="line"></div>
-                        </div>
-
-                        <form autocomplete="off" onsubmit="return submitForm()">
+                        <form autocomplete="off" onsubmit="return submitForm()" class="py-3">
                             <div class="row px-3">
                                 <label class="mb-1">
-                                    <h6 class="mb-0 text-sm">Email Address</h6>
+                                    <h6 class="mb-0 text-sm">Name</h6>
+                                </label>
+
+                                <input class="mb-4" type="text" name="name" id="name" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="row px-3">
+                                <label class="mb-1">
+                                    <h6 class="mb-0 text-sm">Email</h6>
                                 </label>
 
                                 <input class="mb-4" type="email" name="email" id="email" placeholder="Enter a valid email address" required>
@@ -65,38 +47,31 @@
 
                             <div class="row px-3">
                                 <label class="mb-1">
-                                    <h6 class="mb-0 text-sm">Password</h6>
+                                    <h6 class="mb-0 text-sm">Phone</h6>
                                 </label>
 
-                                <input class="mb-4" type="password" name="password" id="password" placeholder="Enter password" required>
+                                <input class="mb-4" type="text" name="phone" id="phone" placeholder="Enter phone number" required>
                             </div>
 
-                            <div class="row px-3 mb-4">
-                                <div class="custom-control custom-checkbox custom-control-inline">
-                                    <input id="chk1" type="checkbox" name="chk" class="custom-control-input">
-                                    <label for="chk1" class="custom-control-label text-sm">Remember me</label>
-                                </div>
+                            <div class="row px-3">
+                                <label class="mb-1">
+                                    <h6 class="mb-0 text-sm">Message</h6>
+                                </label>
 
-                                <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+                                <textarea class="mb-4" type="text" name="message" id="message" placeholder="Enter your message" rows="5" required></textarea>
                             </div>
 
                             <div class="row mb-3 px-3">
-                                <button type="submit" class="btn btn-blue text-center" name="submit" id="submit" value="submit">Login</button>
+                                <button type="submit" class="btn btn-blue text-center" name="submit" id="submit" value="submit">Send</button>
                             </div>
                         </form>
-
-                        <div class="row mb-4 px-3">
-                            <small class="font-weight-bold">Don't have an account?
-                                <a href="#" class="text-danger">Register</a>.
-                            </small>
-                        </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="mb-4">
                 <center>
-                    <h5 class="font-weight-bold">Have a message for us? Please drop <a href="contact.html" class="text-danger">here</a>.</h5>
+                    <h5 class="font-weight-bold">Click <a href="index.html" class="text-danger">here</a> if you want to login.</h5>
                 </center>
             </div>
         </div>
@@ -112,7 +87,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
         function submitForm() {
-            alert("Data telah disubmit");
+            alert("Pesan telah dikirim");
         }
     </script>
 </body>
