@@ -10,11 +10,6 @@ body {
 }
 
 .card0 {
-    box-shadow: 0px 4px 8px 0px #757575;
-    border-radius: 0px;
-}
-
-.card2 {
     margin: 0px 40px;
 }
 
@@ -179,24 +174,4 @@ a:hover {
     background-color: #000;
     color: #fff;
     cursor: pointer;
-}
-
-@media screen and (max-width: 991px) {
-    .logo {
-        margin-left: 0px;
-    }
-
-    .image {
-        width: 300px;
-        height: 220px;
-    }
-
-    .border-line {
-        border-right: none;
-    }
-
-    .card2 {
-        border-top: 1px solid #eeeeee !important;
-        margin: 0px 15px;
-    }
 }
