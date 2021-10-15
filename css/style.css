@@ -164,6 +164,10 @@ a {
     cursor: pointer;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .btn-blue {
     background-color: #1a237e;
     width: 125px;
